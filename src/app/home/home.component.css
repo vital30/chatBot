@@ -1,0 +1,30 @@
+.container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+app-chat  {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    width: 80%;
+}
+
+app-user-input  {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+
+app-button {
+    position: absolute;
+    right: 20px;
+    border: 0px solid #473d3d;
+    background: url("../../assets/reset-svgrepo-com.svg") no-repeat;
+    background-size: 48px 30px;
+    cursor: pointer;
+}

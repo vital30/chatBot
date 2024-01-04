@@ -1,0 +1,7 @@
+.loading{
+    background: url("../../../assets/Spinner-5.gif") no-repeat;
+    background-size: 37px 34px;
+    width: 44px;
+    height: 34px;
+    display: flex;
+}

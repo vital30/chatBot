@@ -1,0 +1,13 @@
+
+<ng-container  class="chatContainer" *ngIf="chatHistory?.length; else emptyStateTpl">
+    <div #scrollDown [scrollTop]="scrollDown.scrollHeight" class="scrollContainer">
+        <div *ngFor="let chat of chatHistory" class="chat" >
+            <span [ngClass]="chat.role.toLocaleLowerCase()">{{chat.role}}:</span>
+            <span>{{chat.message}}</span>
+        </div>
+    </div>
+</ng-container>
+
+<ng-template #emptyStateTpl>
+   <div class="emptyState">Start chating</div> 
+  </ng-template>

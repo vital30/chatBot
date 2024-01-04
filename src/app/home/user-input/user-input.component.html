@@ -1,0 +1,5 @@
+<div class="input">
+    <input [(ngModel)]="searchText" placeholder="Type your message..." (keyup.enter)="emitMessage()"/>
+    <app-loader *ngIf="isLoading"></app-loader>
+    <app-button [disabled]="!searchText" (emitButtonClick)="emitMessage()" title="Send"></app-button>
+</div>

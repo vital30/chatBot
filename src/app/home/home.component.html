@@ -1,0 +1,14 @@
+<div class="container">
+    <app-button *ngIf="(chatHistory$ | async)?.length" 
+                title="Start new chat" 
+                (emitButtonClick)="startNewChat()">
+                </app-button>
+
+  <app-chat
+    [chatHistory]="chatHistory$ | async" />
+
+ <app-user-input
+        (sendMessage)="sendMessage($event)"
+        [isLoading]="isLoading$ | async"/>
+   
+</div>
