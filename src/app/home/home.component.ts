@@ -18,7 +18,7 @@ export class HomeComponent {
 
   constructor(private service: Service) { }
 
-  public sendMessage(message:any):void {
+  public sendMessage(message:string):void {
     this.messageId++;
     this.chatHistory$.next([...this.chatHistory$.value, {id: this.messageId,role:'You','message': message}]);
     this.isLoadintState();
