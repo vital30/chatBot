@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 
-import { Service } from '../_service/service.service';
+import { Service } from './_service/service.service';
 import { BehaviorSubject } from 'rxjs';
-import { Messages } from '../interfaces/messages.interface';
+import { Messages } from './interfaces/messages.interface';
 
 @Component({
   selector: 'app-home',

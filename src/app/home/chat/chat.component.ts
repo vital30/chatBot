@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
-import { Messages } from '../../interfaces/messages.interface';
+import { Messages } from '../interfaces/messages.interface';
 
 @Component({
   selector: 'app-chat',
